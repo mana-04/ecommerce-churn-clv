@@ -1,9 +1,12 @@
-streamlit>=1.35.0
+requirements = """streamlit>=1.35.0
 pandas>=2.0.0
 numpy>=1.24.0
 scikit-learn==1.6.1
 xgboost==3.2.0
 plotly>=5.18.0
 joblib>=1.3.0
-lifetimes>=0.11.3
-optuna>=3.4.0
+"""
+
+with open(f"/content/ecommerce-churn-clv/requirements.txt", "w") as f:
+    f.write(requirements)
+print("requirements.txt updated")
